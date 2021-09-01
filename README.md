@@ -15,7 +15,7 @@ sorts them and stores in a CSV.
 
 * Activate the virtualenv  `source env/bin/activate`
 
-* Clone the repository `git clone git@git.easternenterprise.com:jaitimalhotra/adchieveassignment2.git`
+* Clone the repository `git clone git@gitlab.com:easternenterprise/adchieve-assignment-python.git`
 
 * Install all the dependencies inside your virtualenv `pip install -r requirements.txt` 
 
