@@ -13,8 +13,8 @@ class InputTests(unittest.TestCase):
             {
                 "name": "Eastern Enterprise",
                 "address": "46/1 Office no 1 Ground Floor , Dada House , " +
-                           "Inside dada silk mills compound, " +
-                           "Udhana Main Rd, near Chhaydo Hospital, Surat, 394210, India"
+                           "Inside dada silk mills compound, Udhana Main Rd," +
+                           "near Chhaydo Hospital, Surat, 394210, India"
             },
             {
                 "name": "Adchieve Rotterdam",
@@ -34,16 +34,18 @@ class InputTests(unittest.TestCase):
             },
             {
                 "name": "The Pope",
-                "address": "Saint Martha House, 00120 Citta del Vaticano, Vatican City"
+                "address": "Saint Martha House, " +
+                           "00120 Citta del Vaticano, Vatican City"
             },
             {
                 "name": "Neverland",
-                "address": "5225 Figueroa Mountain Road, Los Olivos, Calif. 93441, USA"
+                "address": "5225 Figueroa Mountain Road, " +
+                           "Los Olivos, Calif. 93441, USA"
             }
         ]
 
-        f = open('input.json')
-        input_json = json.load(f)
+        with open('input.json', 'r') as f:
+            input_json = json.load(f)
         self.assertEqual(input_json, valid_json)
 
 
