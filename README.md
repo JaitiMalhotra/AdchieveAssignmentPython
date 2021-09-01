@@ -17,6 +17,8 @@ sorts them and stores in a CSV.
 
 * Clone the repository `git clone git@gitlab.com:easternenterprise/adchieve-assignment-python.git`
 
+* cd adchieve-assignment-python/
+
 * Install all the dependencies inside your virtualenv `pip install -r requirements.txt` 
 
 ## Usage

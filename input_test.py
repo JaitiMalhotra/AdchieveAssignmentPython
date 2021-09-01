@@ -14,7 +14,7 @@ class InputTests(unittest.TestCase):
                 "name": "Eastern Enterprise",
                 "address": "46/1 Office no 1 Ground Floor , Dada House , " +
                            "Inside dada silk mills compound, Udhana Main Rd," +
-                           "near Chhaydo Hospital, Surat, 394210, India"
+                           " near Chhaydo Hospital, Surat, 394210, India"
             },
             {
                 "name": "Adchieve Rotterdam",
