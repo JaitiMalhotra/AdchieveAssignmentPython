@@ -153,6 +153,7 @@ def get_distances(addresses):
     if addresses:
         geolocations = get_all_geolocations(addresses)
         distance = calculate_distance(geolocations)
+        print(distance)
         distances = create_csv(distance)
         print("Distance of Addresses from Adchieve HQ:\n")
         print(distances)
@@ -161,13 +162,18 @@ def get_distances(addresses):
         print("Data is empty")
 
 
-parser = argparse.ArgumentParser()
-parser.add_argument('--infile', nargs=1,
-                    help="JSON file to be processed",
-                    type=argparse.FileType('r'))
-arguments = parser.parse_args()
-try:
-    address_data = json.load(arguments.infile[0])
-    dataframe = get_distances(address_data)
-except JSONDecodeError:
-    print("Data is not in json format")
+def get_data():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--infile', nargs=1,
+                        help="JSON file to be processed",
+                        type=argparse.FileType('r'))
+    arguments = parser.parse_args()
+    try:
+        address_data = json.load(arguments.infile[0])
+        get_distances(address_data)
+    except JSONDecodeError:
+        print("Data is not in json format")
+
+
+if __name__ == "__main__":
+    get_data()
