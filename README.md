@@ -69,4 +69,4 @@ Put this input in input.json file to get output.
 `
 # Test Input
 
-* To test input run: `python -m unittest input_test.py`
+* To test input run: `python -m unittest distance_test.py`
